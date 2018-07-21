@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/girldb
+    username: root
+    password: bms123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+---
+spring:
+  profiles: dev
+server:
+  port: 8080
+girl:
+  cupSize: B
+  age: 18
+
+---
+spring:
+  profiles: test
+server:
+  port: 8081
+cupSize: F
+age: 20
