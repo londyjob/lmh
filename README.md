@@ -1,2 +1,0 @@
-# lmh
-#made in china
